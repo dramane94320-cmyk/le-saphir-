@@ -6,17 +6,15 @@
 <title>Le Saphir Paris 13 — Restaurant &amp; Lounge Chicha | 49 rue de Patay</title>
 <meta name="description" content="Le Saphir, restaurant &amp; lounge chicha à Paris 13 (49 rue de Patay). 2 étages, 3 salles dont un espace réservé aux femmes, brunch le week-end, matchs en direct. Ouvert jusqu'à 5h.">
 <meta name="theme-color" content="#060d1f">
-<link rel="canonical" href="https://lesaphirparis.com/">
 
 <meta property="og:type" content="restaurant">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Le Saphir Paris">
 <meta property="og:title" content="Le Saphir Paris 13 — Restaurant &amp; Lounge Chicha">
 <meta property="og:description" content="Restaurant &amp; lounge chicha au 49 rue de Patay, Paris 13. Formules dès 20 €, brunch le week-end, matchs en direct, ouvert jusqu'à 5h.">
-<meta property="og:url" content="https://lesaphirparis.com/">
-<meta property="og:image" content="https://lesaphirparis.com/images/le-saphir-paris-13-chicha-et-plats.jpg">
+<meta property="og:image" content="images/le-saphir-paris-13-chicha-et-plats.jpg">
 <meta property="og:image:width" content="1086">
-<meta property="og:image:height" content="1448">
+<meta property="og:image:height" content="1086">
 <meta property="og:image:alt" content="Chicha et assortiment de plats sur une table du Saphir, salle lounge bleu nuit">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -34,13 +32,10 @@
   "name": "Le Saphir",
   "alternateName": "Le Saphir Paris 13 — Restaurant & Lounge",
   "description": "Restaurant & lounge chicha à Paris 13 : 2 étages, 3 salles dont un espace réservé aux femmes, brunch samedi et dimanche, matchs diffusés en direct.",
-  "url": "https://lesaphirparis.com/",
   "telephone": "+33660971309",
-  "image": "https://lesaphirparis.com/images/le-saphir-paris-13-chicha-et-plats.jpg",
+  "image": "images/le-saphir-paris-13-chicha-et-plats.jpg",
   "servesCuisine": ["Brasserie", "Pizzas", "Burgers", "Pâtes", "Crêpes", "Brunch"],
-  "priceRange": "€€",
   "acceptsReservations": "True",
-  "hasMenu": "https://lesaphirparis.com/carte",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "49 rue de Patay",
@@ -68,25 +63,26 @@
   --night-2:#0a1530;
   --night-3:#0f1d40;
   --sapphire:#2a5bd7;
-  --sapphire-light:#5b86f0;
+  --sapphire-light:#6b93f5;
   --sapphire-glow:rgba(42,91,215,.35);
-  --silver:#cfd8ea;
-  --silver-dim:#8e9bb8;
+  --silver:#dde5f3;
+  --silver-dim:#b3bfd6;
   --gold:#c9a45c;
-  --gold-light:#e6c987;
-  --text:#e9eef8;
-  --line:rgba(207,216,234,.14);
+  --gold-light:#e8cc8c;
+  --text:#f1f4fa;
+  --line:rgba(207,216,234,.18);
   --serif:"Cormorant Garamond", Georgia, serif;
   --sans:"Inter", system-ui, -apple-system, sans-serif;
-  --radius:18px;
-  --gutter:clamp(16px,5vw,48px);
+  --radius:16px;
+  --gutter:clamp(16px,4.5vw,48px);
   --max:1180px;
+  --section:clamp(48px,7vw,88px);
 }
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:72px}
 body{
   margin:0;background:var(--night);color:var(--text);
-  font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.65;
+  font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.65;
   overflow-x:hidden;-webkit-font-smoothing:antialiased;
 }
 img{display:block;max-width:100%;height:auto}
@@ -94,25 +90,24 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0;letter-spacing:.005em}
 p{margin:0 0 1em}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
-.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 :focus-visible{outline:2px solid var(--gold-light);outline-offset:3px;border-radius:4px}
 
-/* ---------- Typo helpers ---------- */
+/* ---------- Typo ---------- */
 .eyebrow{
-  display:inline-flex;align-items:center;gap:.7em;
-  font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-light);font-weight:500;
+  display:inline-flex;align-items:center;gap:.7em;margin:0;
+  font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-light);font-weight:500;
 }
 .eyebrow::before{content:"";width:28px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
-.section-title{font-size:clamp(2.2rem,7vw,3.6rem);margin:.35em 0 .4em}
+.section-title{font-size:clamp(2.1rem,6.5vw,3.4rem);margin:.3em 0 .35em}
 .section-title em{font-style:italic;color:var(--silver);font-weight:400}
 .lead{color:var(--silver);font-size:1.05rem;max-width:40em}
 .gold{color:var(--gold-light)}
 
-/* ---------- Buttons ---------- */
+/* ---------- Boutons ---------- */
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;white-space:nowrap;
   min-height:50px;padding:0 1.6em;border-radius:999px;
-  font:500 .82rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;
+  font:500 .8rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;
   transition:transform .3s, box-shadow .3s, background .3s, color .3s, border-color .3s;
   cursor:pointer;border:1px solid transparent;
 }
@@ -121,30 +116,31 @@ p{margin:0 0 1em}
   box-shadow:0 10px 30px -10px var(--sapphire-glow), inset 0 1px 0 rgba(255,255,255,.18);
 }
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 40px -10px rgba(42,91,215,.6), inset 0 1px 0 rgba(255,255,255,.2)}
-.btn-ghost{border-color:rgba(230,201,135,.5);color:var(--gold-light)}
+.btn-ghost{border-color:rgba(232,204,140,.55);color:var(--gold-light)}
 .btn-ghost:hover{background:rgba(201,164,92,.1);border-color:var(--gold-light)}
 .btn svg{width:18px;height:18px;flex:none}
 
-/* ---------- Header ---------- */
+/* ---------- En-tête ---------- */
 .site-header{
   position:fixed;inset:0 0 auto 0;z-index:50;
-  padding:14px var(--gutter);
-  display:flex;align-items:center;justify-content:space-between;
-  transition:background .4s, backdrop-filter .4s, padding .4s, border-color .4s;
+  padding:12px var(--gutter);
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  background:linear-gradient(180deg,rgba(6,13,31,.7),rgba(6,13,31,0));
+  transition:background .4s, border-color .4s;
   border-bottom:1px solid transparent;
 }
 .site-header.scrolled{
-  background:rgba(6,13,31,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-  border-color:var(--line);padding-top:10px;padding-bottom:10px;
+  background:rgba(6,13,31,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-color:var(--line);
 }
-.brand{display:flex;align-items:center;gap:10px}
-.brand svg{width:30px;height:30px;filter:drop-shadow(0 0 10px var(--sapphire-glow))}
-.brand-name{font-family:var(--serif);font-size:1.35rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
-.brand-name small{display:block;font-family:var(--sans);font-size:.56rem;letter-spacing:.42em;color:var(--silver-dim);font-weight:400;margin-top:2px}
+.brand{display:flex;align-items:center;gap:10px;white-space:nowrap;flex:none}
+.brand svg{width:30px;height:30px;flex:none;filter:drop-shadow(0 0 10px var(--sapphire-glow))}
+.brand-name{font-family:var(--serif);font-size:1.3rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;line-height:1}
+.brand-name small{display:block;font-family:var(--sans);font-size:.55rem;letter-spacing:.36em;color:var(--silver-dim);font-weight:400;margin-top:5px}
 
 .nav-toggle{
-  position:relative;z-index:60;width:46px;height:46px;border-radius:50%;
-  background:rgba(15,29,64,.6);border:1px solid var(--line);cursor:pointer;
+  position:relative;z-index:60;width:46px;height:46px;border-radius:50%;flex:none;
+  background:rgba(15,29,64,.75);border:1px solid var(--line);cursor:pointer;
   display:grid;place-items:center;
 }
 .nav-toggle span{display:block;width:20px;height:1.5px;background:var(--silver);position:relative;transition:background .3s}
@@ -160,227 +156,233 @@ p{margin:0 0 1em}
   position:fixed;inset:0;z-index:55;
   background:radial-gradient(120% 80% at 80% 0%,rgba(42,91,215,.28),transparent 60%),var(--night);
   display:flex;flex-direction:column;justify-content:center;padding:90px var(--gutter) 40px;
-  opacity:0;visibility:hidden;transition:opacity .4s, visibility .4s;
+  opacity:0;visibility:hidden;transition:opacity .35s, visibility .35s;
 }
 .nav-open .nav{opacity:1;visibility:visible}
 .nav ul{list-style:none;margin:0;padding:0}
-.nav li{overflow:hidden}
-.nav a{
-  display:block;font-family:var(--serif);font-size:clamp(2rem,8vw,2.6rem);line-height:1.35;color:var(--text);
-  transform:translateY(100%);transition:transform .5s cubic-bezier(.2,.8,.2,1), color .3s;
+.nav ul a{
+  display:block;font-family:var(--serif);font-size:clamp(1.9rem,7.5vw,2.5rem);line-height:1.4;color:var(--text);
+  transition:color .3s;
 }
-.nav-open .nav a{transform:none}
-.nav li:nth-child(2) a{transition-delay:.04s}.nav li:nth-child(3) a{transition-delay:.08s}
-.nav li:nth-child(4) a{transition-delay:.12s}.nav li:nth-child(5) a{transition-delay:.16s}
-.nav li:nth-child(6) a{transition-delay:.2s}.nav li:nth-child(7) a{transition-delay:.24s}
-.nav a:hover{color:var(--gold-light)}
-.nav-foot{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:12px}
+.nav ul a:hover{color:var(--gold-light)}
+.nav-foot{margin-top:2rem;display:flex;flex-wrap:wrap;gap:12px}
 body.nav-open{overflow:hidden}
-.nav .nav-foot a{display:inline-flex;font-family:var(--sans);font-size:.82rem;line-height:1;letter-spacing:.14em}
-.nav .nav-foot .btn-primary{color:#fff}
 
-@media (min-width:1024px){
+@media (min-width:1100px){
   .nav-toggle{display:none}
-  .nav{position:static;inset:auto;background:none;opacity:1;visibility:visible;padding:0;flex-direction:row;align-items:center;gap:28px}
-  .nav ul{display:flex;gap:26px}
-  .nav a{font-family:var(--sans);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;transform:none;color:var(--silver);font-weight:400}
-  .nav-foot{margin:0}
-  .nav-foot .btn-ghost{display:none}
-  .nav .nav-foot .btn{min-height:42px;padding:0 1.3em;font-size:.72rem}
+  .nav{position:static;inset:auto;background:none;opacity:1;visibility:visible;padding:0;flex-direction:row;align-items:center;gap:22px}
+  .nav ul{display:flex;gap:clamp(14px,1.5vw,24px)}
+  .nav ul a{font-family:var(--sans);font-size:.72rem;line-height:1.2;letter-spacing:.13em;text-transform:uppercase;color:var(--silver);font-weight:500;white-space:nowrap}
+  .nav-foot{margin:0;flex-wrap:nowrap}
+  .nav-foot .btn-primary{display:none}
+  .nav-foot .btn{min-height:42px;padding:0 1.2em;font-size:.74rem;letter-spacing:.08em}
 }
 
 /* ---------- Hero ---------- */
-.hero{
-  position:relative;min-height:100svh;display:flex;align-items:flex-end;
-  padding:120px 0 64px;isolation:isolate;overflow:hidden;
-}
-.hero-media{position:absolute;inset:0 0 auto 0;height:min(72svh,135vw);z-index:-2}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 60%;transform:scale(1.06);animation:heroZoom 14s ease-out forwards}
-@keyframes heroZoom{to{transform:scale(1)}}
-.hero::after{
-  content:"";position:absolute;inset:0;z-index:-1;
-  background:
-    linear-gradient(180deg,rgba(6,13,31,.55) 0%,rgba(6,13,31,0) 18%,rgba(6,13,31,.1) 34%,rgba(6,13,31,.85) 56%,var(--night) 72%),
-    radial-gradient(80% 50% at 50% 100%,rgba(42,91,215,.25),transparent 70%);
-}
-.hero-content{position:relative}
-.hero-gem{display:none;width:64px;height:64px;margin-bottom:18px;filter:drop-shadow(0 0 24px rgba(91,134,240,.7));animation:float 6s ease-in-out infinite}
+.hero{position:relative;padding:68px 0 calc(var(--section) * .7)}
+.hero-media{position:relative}
+.hero-media img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 40%}
+/* Dégradé uniquement sur le bas de la photo, derrière le début du texte */
+.hero-media::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(180deg,rgba(6,13,31,0),var(--night))}
+.hero-content{position:relative;margin-top:-28px}
+.hero-gem{display:none;width:58px;height:58px;margin-bottom:16px;filter:drop-shadow(0 0 24px rgba(107,147,245,.7));animation:float 6s ease-in-out infinite}
 @keyframes float{50%{transform:translateY(-8px)}}
-.hero h1{font-size:clamp(3.2rem,15vw,7rem);font-weight:500;letter-spacing:.04em;line-height:.95}
+.hero h1{font-size:clamp(3.2rem,14vw,6.4rem);font-weight:500;letter-spacing:.04em;line-height:.95;margin-top:.15em}
 .hero h1 span{display:block;font-style:italic;font-weight:400;font-size:.42em;letter-spacing:.02em;color:var(--silver);margin-top:.35em}
-.hero-sub{margin:1.2rem 0 1.8rem;color:var(--silver);max-width:32em;font-size:1.02rem}
+.hero-sub{margin:1.1rem 0 1.6rem;color:var(--silver);max-width:32em;font-size:1.02rem}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
 .hero-meta{
-  display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:2rem;padding-top:1.4rem;border-top:1px solid var(--line);
-  font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--silver-dim)
+  display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:1.8rem;padding-top:1.2rem;border-top:1px solid var(--line);
+  font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--silver-dim)
 }
-.hero-meta b{color:var(--gold-light);font-weight:500}
+.hero-meta b{color:var(--gold-light);font-weight:600}
 .open-status{display:inline-flex;align-items:center;gap:8px}
 .open-status i{width:8px;height:8px;border-radius:50%;background:var(--silver-dim)}
 .open-status.is-open i{background:#4ade80;box-shadow:0 0 0 4px rgba(74,222,128,.18)}
 
-@media (min-width:960px){
-  .hero{align-items:center;padding:140px 0 90px}
-  .hero-media{left:auto;width:min(46vw,620px);right:var(--gutter);top:110px;bottom:70px;border-radius:300px 300px var(--radius) var(--radius);overflow:hidden;
-    box-shadow:0 40px 90px -30px rgba(0,0,0,.8),0 0 0 1px rgba(230,201,135,.25)}
-  .hero::after{background:radial-gradient(60% 70% at 85% 40%,rgba(42,91,215,.22),transparent 70%),linear-gradient(90deg,var(--night) 40%,transparent 100%)}
-  .hero-content{max-width:52%}
+@media (min-width:900px){
+  .hero{padding:118px 0 var(--section)}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+  .hero-media{order:2;border-radius:280px 280px var(--radius) var(--radius);overflow:hidden;
+    box-shadow:0 40px 90px -30px rgba(0,0,0,.8),0 0 0 1px rgba(232,204,140,.3)}
+  .hero-media::after{display:none}
+  .hero-media img{aspect-ratio:4/5;object-position:center 45%}
+  .hero-content{margin-top:0}
   .hero-gem{display:block}
-  .hero-media{height:auto}
 }
+.hero-bg{position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 60% at 80% 30%,rgba(42,91,215,.22),transparent 70%)}
+@media (max-width:899px){.hero .wrap.hero-grid{padding:0}.hero-content{padding:0 var(--gutter)}}
 
 /* ---------- Sections ---------- */
-section{position:relative;padding:clamp(80px,12vw,140px) 0}
-.section-head{margin-bottom:clamp(36px,6vw,60px)}
-.divider{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold)}
-.divider::before,.divider::after{content:"";height:1px;width:min(30vw,160px);background:linear-gradient(90deg,transparent,rgba(201,164,92,.6),transparent)}
-.divider svg{width:18px;height:18px}
+section{position:relative;padding:var(--section) 0}
+.section-head{margin-bottom:clamp(24px,4vw,40px)}
+.alt{background:linear-gradient(180deg,var(--night),var(--night-2) 50%,var(--night))}
 
 /* Expérience */
-.exp-grid{display:grid;gap:40px}
-.exp-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.exp-photos picture:first-child{grid-row:span 2}
-.exp-photos img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
-.features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:2rem}
+.exp-grid{display:grid;gap:36px}
+.exp-photos{position:relative;padding-bottom:22%}
+.exp-photos img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--radius)}
+.exp-photos .p2{position:absolute;right:0;bottom:0;width:58%;border-radius:calc(var(--radius) + 6px);padding:6px;background:var(--night);
+  box-shadow:0 20px 40px -20px rgba(0,0,0,.8)}
+.exp-photos .p1 img{object-position:center 60%}
+.exp-photos .p2 img{object-position:center 55%}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:1.6rem}
 .feature{
-  padding:20px 18px;border-radius:var(--radius);
-  background:linear-gradient(160deg,rgba(15,29,64,.8),rgba(10,21,48,.4));border:1px solid var(--line);
+  padding:18px 16px;border-radius:var(--radius);
+  background:linear-gradient(160deg,rgba(15,29,64,.85),rgba(10,21,48,.5));border:1px solid var(--line);
 }
-.feature svg{width:26px;height:26px;color:var(--gold-light);margin-bottom:10px}
-.feature strong{display:block;font-family:var(--serif);font-size:1.45rem;font-weight:500;line-height:1.1}
-.feature span{font-size:.85rem;color:var(--silver-dim)}
-@media (min-width:900px){.exp-grid{grid-template-columns:1.05fr 1fr;align-items:center;gap:64px}}
+.feature svg{width:26px;height:26px;color:var(--gold-light);margin-bottom:8px}
+.feature strong{display:block;font-family:var(--serif);font-size:1.45rem;font-weight:600;line-height:1.1}
+.feature span{font-size:.86rem;color:var(--silver-dim)}
+@media (min-width:900px){.exp-grid{grid-template-columns:1.1fr 1fr;align-items:center;gap:60px}}
 
 /* Formules */
-.formules{background:linear-gradient(180deg,var(--night),var(--night-2) 50%,var(--night))}
-.cards{display:grid;gap:18px}
+.cards{display:grid;gap:16px}
 @media (min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
 .card{
-  position:relative;padding:30px 24px 26px;border-radius:22px;overflow:hidden;
-  background:linear-gradient(170deg,rgba(20,38,82,.75),rgba(8,17,40,.9));
+  position:relative;padding:28px 22px 24px;border-radius:20px;overflow:hidden;
+  background:linear-gradient(170deg,rgba(20,38,82,.8),rgba(8,17,40,.92));
   border:1px solid var(--line);display:flex;flex-direction:column;
   transition:transform .4s, border-color .4s, box-shadow .4s;
 }
-.card:hover{transform:translateY(-4px);border-color:rgba(230,201,135,.4);box-shadow:0 30px 60px -30px rgba(42,91,215,.5)}
-.card.featured{border-color:rgba(230,201,135,.45);background:radial-gradient(120% 60% at 50% 0%,rgba(42,91,215,.35),transparent 70%),linear-gradient(170deg,rgba(20,38,82,.85),rgba(8,17,40,.95))}
-.card-tag{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.8rem}
+.card:hover{transform:translateY(-4px);border-color:rgba(232,204,140,.45);box-shadow:0 30px 60px -30px rgba(42,91,215,.5)}
+.card.featured{border-color:rgba(232,204,140,.5);background:radial-gradient(120% 60% at 50% 0%,rgba(42,91,215,.38),transparent 70%),linear-gradient(170deg,rgba(20,38,82,.88),rgba(8,17,40,.95))}
+.card-tag{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.7rem;font-weight:500}
 .card h3{font-size:2rem}
-.card .price{font-family:var(--serif);font-size:3.2rem;line-height:1;margin:.3em 0 .15em;color:#fff}
-.price small{font-size:.4em;color:var(--silver-dim);font-family:var(--sans);letter-spacing:.1em}
-.card p{color:var(--silver);font-size:.94rem}
-.card ul{list-style:none;padding:0;margin:.4rem 0 1rem}
+.card .price{font-family:var(--serif);font-size:3.2rem;line-height:1;margin:.3em 0 .2em;color:#fff}
+.card p{color:var(--silver);font-size:.95rem}
+.card ul{list-style:none;padding:0;margin:.4rem 0 0}
 .card li{padding:12px 0;border-top:1px solid var(--line);font-size:.93rem;color:var(--silver)}
-.card li b{display:flex;justify-content:space-between;align-items:baseline;font-weight:500;color:var(--text);font-size:1rem}
-.card li b em{font-style:normal;font-family:var(--serif);font-size:1.5rem;color:var(--gold-light)}
-.card .note{font-size:.8rem;color:var(--silver-dim);margin-top:auto;padding-top:.8rem}
+.card li b{display:flex;justify-content:space-between;align-items:baseline;font-weight:600;color:var(--text);font-size:1rem}
+.card li b em{font-style:normal;font-family:var(--serif);font-size:1.55rem;color:var(--gold-light)}
+.card .note{font-size:.84rem;color:var(--silver-dim);margin-top:auto;padding-top:.6rem;margin-bottom:0}
 
-/* Événements */
-.events{display:grid;gap:18px}
+/* Événements : visuels graphiques */
+.events{display:grid;gap:16px}
 @media (min-width:760px){.events{grid-template-columns:1fr 1fr}}
 .event{
-  position:relative;border-radius:24px;overflow:hidden;min-height:380px;display:flex;align-items:flex-end;
-  border:1px solid var(--line);isolation:isolate;
+  position:relative;border-radius:22px;overflow:hidden;border:1px solid rgba(232,204,140,.35);
+  padding:26px 24px 28px;isolation:isolate;min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;
 }
-.event picture,.event img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s}
-.event:hover img{transform:scale(1.05)}
-.event::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,13,31,.2),rgba(6,13,31,.92) 65%)}
-.event-body{padding:28px 24px}
-.day{display:inline-block;padding:7px 14px;border-radius:999px;border:1px solid rgba(230,201,135,.5);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px;background:rgba(6,13,31,.5);backdrop-filter:blur(6px)}
-.event h3{font-size:2.3rem;margin-bottom:.3em}
-.event p{color:var(--silver);margin:0}
-.event p + p{margin-top:.4em;font-size:.88rem;color:var(--silver-dim)}
+.event::before{content:"";position:absolute;inset:0;z-index:-2}
+.event.monday::before{background:radial-gradient(90% 70% at 85% 10%,rgba(107,147,245,.75),transparent 60%),linear-gradient(150deg,#1a3a9c 0%,#0c1d55 45%,#060d1f 100%)}
+.event.thursday::before{background:radial-gradient(90% 70% at 85% 10%,rgba(150,120,235,.6),transparent 60%),linear-gradient(150deg,#2b2f8f 0%,#141a5a 45%,#060d1f 100%)}
+.event-art{position:absolute;top:22px;right:22px;width:clamp(120px,32vw,170px);height:auto;z-index:-1;color:var(--gold-light);opacity:.95}
+.event .rings{position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;border:1px solid rgba(232,204,140,.22);z-index:-1;
+  box-shadow:0 0 0 40px rgba(255,255,255,.02),0 0 0 41px rgba(232,204,140,.14),0 0 0 90px rgba(255,255,255,.015),0 0 0 91px rgba(232,204,140,.1)}
+.day{display:inline-block;align-self:flex-start;padding:7px 14px;border-radius:999px;border:1px solid rgba(232,204,140,.6);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px;background:rgba(6,13,31,.45);font-weight:500}
+.event h3{font-size:clamp(2rem,6.5vw,2.5rem);margin-bottom:.3em}
+.event p{color:#fff;margin:0;font-size:1.02rem}
+.event p + p{margin-top:.35em;font-size:.92rem;color:var(--silver)}
 
 /* Carte */
-.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.menu-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
+.menu-strip img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px}
+.menu-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 @media (min-width:640px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
 @media (min-width:960px){.menu-grid{grid-template-columns:repeat(4,1fr)}}
 .menu-item{
-  display:flex;align-items:center;gap:12px;padding:18px 16px;border-radius:14px;
-  border:1px solid var(--line);background:rgba(15,29,64,.35);
-  font-family:var(--serif);font-size:1.35rem;transition:border-color .3s, background .3s;
+  display:flex;align-items:center;gap:12px;padding:16px;border-radius:14px;
+  border:1px solid var(--line);background:rgba(15,29,64,.45);
+  font-family:var(--serif);font-size:1.35rem;font-weight:500;
 }
-.menu-item:hover{border-color:rgba(230,201,135,.45);background:rgba(42,91,215,.14)}
-.menu-item svg{width:14px;height:14px;color:var(--sapphire-light);flex:none}
-.menu-item.hl{border-color:rgba(230,201,135,.4);background:linear-gradient(135deg,rgba(42,91,215,.3),rgba(15,29,64,.4))}
-.menu-cta{display:flex;justify-content:center;margin-top:36px}
-.menu-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px}
-.menu-strip img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px}
+.menu-item svg{width:14px;height:14px;flex:none}
+.menu-item.hl{border-color:rgba(232,204,140,.45);background:linear-gradient(135deg,rgba(42,91,215,.32),rgba(15,29,64,.45))}
+.menu-note{margin:22px 0 0;text-align:center;color:var(--silver-dim);font-size:.92rem}
 
 /* Galerie */
-.gallery{columns:2;column-gap:10px}
-@media (min-width:760px){.gallery{columns:3;column-gap:14px}}
-.gallery figure{margin:0 0 10px;break-inside:avoid;border-radius:14px;overflow:hidden;position:relative;cursor:zoom-in}
-@media (min-width:760px){.gallery figure{margin-bottom:14px}}
-.gallery img{width:100%;transition:transform .8s, filter .8s}
-.gallery figure:hover img{transform:scale(1.04)}
-.gallery figcaption{
-  position:absolute;left:0;right:0;bottom:0;padding:28px 12px 10px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
-  background:linear-gradient(transparent,rgba(6,13,31,.85));color:var(--silver);
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0;padding:0;list-style:none}
+.gallery figure{margin:0}
+.gallery button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;border-radius:14px;overflow:hidden}
+.gallery img{width:100%;aspect-ratio:var(--r);object-fit:cover;object-position:var(--pos,center);transition:transform .8s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery figcaption{padding:10px 2px 0;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-dim);font-weight:500}
+.swipe-hint{display:none}
+@media (max-width:759px){
+  .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;
+    margin:0 calc(var(--gutter) * -1);padding:0 var(--gutter) 6px;scroll-padding:0 var(--gutter);
+    -webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .gallery::-webkit-scrollbar{display:none}
+  .gallery li{flex:0 0 auto;scroll-snap-align:start}
+  .gallery img{height:230px;width:auto;aspect-ratio:var(--r)}
+  .swipe-hint{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--silver-dim)}
+  .swipe-hint svg{width:18px;height:18px}
 }
-.lightbox{position:fixed;inset:0;z-index:90;background:rgba(3,7,18,.94);display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox{position:fixed;inset:0;z-index:90;background:rgba(3,7,18,.95);display:none;align-items:center;justify-content:center;padding:64px 16px}
 .lightbox.open{display:flex}
-.lightbox img{max-height:88vh;max-width:100%;width:auto;border-radius:12px}
-.lightbox button{position:absolute;top:16px;right:16px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:rgba(15,29,64,.7);color:#fff;font-size:1.5rem;cursor:pointer}
+.lightbox img{max-height:84vh;max-width:100%;width:auto;border-radius:12px}
+.lb-btn{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:rgba(15,29,64,.8);color:#fff;font-size:1.4rem;line-height:1;cursor:pointer;display:grid;place-items:center}
+.lb-close{top:14px;right:14px}
+.lb-prev{left:12px;top:50%;transform:translateY(-50%)}
+.lb-next{right:12px;top:50%;transform:translateY(-50%)}
+@media (max-width:759px){.lb-prev,.lb-next{top:auto;bottom:14px;transform:none}.lb-prev{left:16px}.lb-next{right:16px}}
+.lb-cap{position:absolute;bottom:28px;left:0;right:0;text-align:center;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--silver)}
 
 /* Horaires */
-.info-grid{display:grid;gap:22px}
+.info-grid{display:grid;gap:18px}
 @media (min-width:900px){.info-grid{grid-template-columns:1fr 1.1fr}}
-.panel{border-radius:22px;border:1px solid var(--line);background:rgba(10,21,48,.6);padding:28px 22px}
+.panel{border-radius:20px;border:1px solid var(--line);background:rgba(10,21,48,.7);padding:24px 20px}
 .hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{padding:13px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
-.hours th{font-family:var(--serif);font-size:1.25rem;font-weight:500}
+.hours th,.hours td{padding:12px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+.hours th{font-family:var(--serif);font-size:1.25rem;font-weight:600}
 .hours td{text-align:right;color:var(--silver);font-variant-numeric:tabular-nums}
 .hours tr.today th,.hours tr.today td{color:var(--gold-light)}
-.kitchen{margin-top:18px;font-size:.9rem;color:var(--silver-dim)}
-.kitchen b{color:var(--silver);font-weight:500}
-.map{border-radius:22px;background-image:radial-gradient(circle at 50% 50%,rgba(42,91,215,.2),transparent 70%);overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--night-2)}
-.map iframe{width:100%;height:100%;min-height:340px;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.6) brightness(.95)}
-.addr{display:flex;gap:12px;align-items:flex-start;margin-top:22px}
+.kitchen{margin-top:16px;font-size:.92rem;color:var(--silver)}
+.kitchen b{color:#fff;font-weight:600}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:320px;background:radial-gradient(circle at 50% 50%,rgba(42,91,215,.2),transparent 70%),var(--night-2)}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.6) brightness(.95)}
+.addr{display:flex;gap:12px;align-items:flex-start;margin-top:20px}
 .addr svg{width:22px;height:22px;color:var(--gold-light);flex:none;margin-top:3px}
+.addr address{font-style:normal}
 
 /* Réservation */
 .reserve{text-align:center;overflow:hidden}
 .reserve::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 50%,rgba(42,91,215,.28),transparent 70%);z-index:-1}
-.reserve .lead{margin:0 auto 2rem}
+.reserve .lead{margin:0 auto 1.2rem}
 .reserve-actions{display:flex;flex-direction:column;gap:12px;align-items:center}
 @media (min-width:640px){.reserve-actions{flex-direction:row;justify-content:center}}
-.phone-big{font-family:var(--serif);font-size:clamp(2.4rem,10vw,4rem);display:block;margin:.2em 0 .6em;color:#fff;letter-spacing:.04em}
-.socials{display:flex;justify-content:center;gap:12px;margin-top:2rem;flex-wrap:wrap}
-.social{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:1px solid var(--line);font-size:.88rem;color:var(--silver);transition:border-color .3s,color .3s}
+.phone-big{font-family:var(--serif);font-size:clamp(2.3rem,10vw,3.8rem);display:inline-block;margin:0 0 .5em;color:#fff;letter-spacing:.04em;white-space:nowrap}
+.socials{display:flex;justify-content:center;gap:12px;margin-top:1.6rem;flex-wrap:wrap}
+.social{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:1px solid var(--line);font-size:.9rem;color:var(--silver);transition:border-color .3s,color .3s}
 .social:hover{border-color:var(--gold);color:var(--gold-light)}
 .social svg{width:18px;height:18px}
 
 /* Club */
+.club{text-align:center}
+.club .lead{margin:0 auto 1.6rem}
 .club-card{
-  position:relative;max-width:520px;margin:0 auto 36px;aspect-ratio:1.586;border-radius:22px;padding:26px;
+  position:relative;max-width:480px;margin:0 auto 28px;aspect-ratio:1.586;border-radius:22px;padding:24px;text-align:left;
   background:
-    radial-gradient(120% 90% at 100% 0%,rgba(91,134,240,.55),transparent 55%),
+    radial-gradient(120% 90% at 100% 0%,rgba(107,147,245,.55),transparent 55%),
     linear-gradient(135deg,#0d2160 0%,#08132f 55%,#050b1c 100%);
-  border:1px solid rgba(230,201,135,.45);
+  border:1px solid rgba(232,204,140,.5);
   box-shadow:0 40px 80px -30px rgba(42,91,215,.6), inset 0 1px 0 rgba(255,255,255,.12);
   display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;
-  transform:perspective(900px) rotateX(6deg) rotateY(-8deg);transition:transform .8s;
 }
-.club-card:hover{transform:perspective(900px) rotateX(0) rotateY(0)}
 .club-card::after{content:"";position:absolute;inset:-50%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.12) 50%,transparent 60%);animation:shine 6s infinite}
 @keyframes shine{0%{transform:translateX(-30%)}60%,100%{transform:translateX(30%)}}
 .club-card .top{display:flex;justify-content:space-between;align-items:center}
 .club-card svg{width:42px;height:42px}
-.club-card .label{font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-light)}
-.club-card .name{font-family:var(--serif);font-size:clamp(1.8rem,7vw,2.4rem);letter-spacing:.14em;text-transform:uppercase}
+.club-card .label{font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-light)}
+.club-card .name{font-family:var(--serif);font-size:clamp(1.7rem,7vw,2.3rem);letter-spacing:.14em;text-transform:uppercase}
 .club-card .chip{width:42px;height:32px;border-radius:6px;background:linear-gradient(135deg,var(--gold-light),var(--gold));opacity:.9}
-.club{text-align:center}
-.club .lead{margin:0 auto 1.8rem}
+.club-ask{
+  display:inline-flex;align-items:center;gap:12px;padding:14px 24px;border-radius:999px;
+  border:1px solid rgba(232,204,140,.55);background:rgba(15,29,64,.6);color:var(--gold-light);
+  font-weight:500;font-size:.95rem;max-width:100%;
+}
+.club-ask svg{width:20px;height:20px;flex:none}
 
-/* Footer */
-footer{border-top:1px solid var(--line);padding:50px 0 110px;color:var(--silver-dim);font-size:.85rem}
-.foot{display:grid;gap:26px}
+/* Pied de page */
+footer{border-top:1px solid var(--line);padding:44px 0 104px;color:var(--silver-dim);font-size:.88rem}
+.foot{display:grid;gap:24px}
 @media (min-width:760px){.foot{grid-template-columns:1.2fr 1fr 1fr}}
-footer h4{font-family:var(--serif);font-size:1.2rem;color:var(--text);font-weight:500;margin:0 0 .6em}
+footer h4{font-family:var(--serif);font-size:1.2rem;color:var(--text);font-weight:600;margin:0 0 .5em}
 footer a:hover{color:var(--gold-light)}
-.copy{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:.75rem}
+footer .brand{margin-bottom:12px}
+.copy{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:.78rem}
 
-/* Floating call */
+/* Bouton d'appel flottant */
 .call-fab{
   position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:45;
   width:60px;height:60px;border-radius:50%;display:grid;place-items:center;
@@ -391,13 +393,14 @@ footer a:hover{color:var(--gold-light)}
 @keyframes pulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.6);opacity:0}}
 .call-fab svg{width:26px;height:26px}
 
-/* Reveal */
-.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
-.reveal.in{opacity:1;transform:none}
-.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+/* Apparition au défilement : le contenu est visible par défaut ;
+   il n'est masqué que si le script d'animation est actif. */
+.anim .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.anim .reveal.in{opacity:1;transform:none}
+.anim .reveal.d1{transition-delay:.08s}.anim .reveal.d2{transition-delay:.16s}.anim .reveal.d3{transition-delay:.24s}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
-  .reveal{opacity:1;transform:none}
+  .anim .reveal{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
 </style>
@@ -419,13 +422,13 @@ footer a:hover{color:var(--gold-light)}
       <path d="M4 24h20l8 34z" fill="#163a9e" opacity=".9"/>
       <path d="M60 24H40l-8 34z" fill="#1b46b8" opacity=".75"/>
       <path d="M24 24h16l-8 34z" fill="#2f63e0"/>
-      <path d="M16 8h32l12 16-28 34L4 24zM4 24h56M16 8l8 16 8 34 8-34 8-16M24 24l8-16 8 16" fill="none" stroke="#e6c987" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M16 8h32l12 16-28 34L4 24zM4 24h56M16 8l8 16 8 34 8-34 8-16M24 24l8-16 8 16" fill="none" stroke="#e8cc8c" stroke-width="1.2" stroke-linejoin="round"/>
       <path d="M20 12l3 6" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
     </symbol>
   </defs>
 </svg>
 
-<header class="site-header" id="top">
+<header class="site-header">
   <a href="#accueil" class="brand" aria-label="Le Saphir — accueil">
     <svg aria-hidden="true"><use href="#gem"/></svg>
     <span class="brand-name">Le Saphir<small>Paris 13 · Lounge</small></span>
@@ -443,7 +446,7 @@ footer a:hover{color:var(--gold-light)}
     </ul>
     <div class="nav-foot">
       <a class="btn btn-primary" href="#reservation">Réserver</a>
-      <a class="btn btn-ghost" href="tel:+33660971309">06 60 97 13 09</a>
+      <a class="btn btn-ghost" href="tel:+33660971309">06&nbsp;60&nbsp;97&nbsp;13&nbsp;09</a>
     </div>
   </nav>
 </header>
@@ -451,14 +454,15 @@ footer a:hover{color:var(--gold-light)}
 <main>
 <!-- HERO -->
 <section class="hero" id="accueil" aria-label="Accueil">
-  <div class="hero-media">
-    <picture>
-      <source srcset="images/le-saphir-paris-13-chicha-et-plats.webp" type="image/webp">
-      <img src="images/le-saphir-paris-13-chicha-et-plats.jpg" width="1086" height="1448" fetchpriority="high"
-           alt="Chicha entourée de plats colorés — pizza, viande, salades et cocktails — dans la salle lounge bleu nuit du Saphir, écran au logo Le Saphir en fond">
-    </picture>
-  </div>
-  <div class="wrap" style="width:100%">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-media">
+      <picture>
+        <source srcset="images/le-saphir-paris-13-chicha-et-plats.webp" type="image/webp">
+        <img src="images/le-saphir-paris-13-chicha-et-plats.jpg" width="1086" height="1086" fetchpriority="high"
+             alt="Chicha entourée de plats colorés — pizza, viande, salades et cocktails — dans la salle lounge bleu nuit du Saphir, écran au logo Le Saphir en fond">
+      </picture>
+    </div>
     <div class="hero-content">
       <svg class="hero-gem" aria-hidden="true"><use href="#gem"/></svg>
       <p class="eyebrow">Restaurant &amp; Lounge Chicha · Paris 13</p>
@@ -469,7 +473,7 @@ footer a:hover{color:var(--gold-light)}
         <a class="btn btn-ghost" href="#formules">Nos formules</a>
       </div>
       <div class="hero-meta">
-        <span class="open-status" id="openStatus"><i></i><span>Horaires</span></span>
+        <span class="open-status" id="openStatus"><i></i><span>Ouvert 7j/7</span></span>
         <span>Cuisine jusqu'à <b>5h</b> ven-sam</span>
         <span>Matchs en <b>direct</b></span>
       </div>
@@ -481,20 +485,15 @@ footer a:hover{color:var(--gold-light)}
 <section id="experience">
   <div class="wrap exp-grid">
     <div class="exp-photos reveal">
-      <picture>
+      <picture class="p1">
+        <source srcset="images/le-saphir-salle-principale-lounge.webp" type="image/webp">
+        <img src="images/le-saphir-salle-principale-lounge.jpg" width="687" height="458" loading="lazy"
+             alt="Salle principale du Saphir : longues banquettes en velours bleu, tables noires et fauteuils moutarde">
+      </picture>
+      <picture class="p2">
         <source srcset="images/le-saphir-salle-lounge-banquettes-velours.webp" type="image/webp">
-        <img src="images/le-saphir-salle-lounge-banquettes-velours.jpg" width="1000" height="1333" loading="lazy"
-             alt="Salle lounge du Saphir avec banquettes en velours bleu, fauteuils moutarde et suspensions dorées">
-      </picture>
-      <picture>
-        <source srcset="images/le-saphir-salle-neon-violet.webp" type="image/webp">
-        <img src="images/le-saphir-salle-neon-violet.jpg" width="878" height="1560" loading="lazy"
-             alt="Salle intimiste aux lumières violettes, fauteuils bordeaux, miroirs dorés et néon Le Saphir">
-      </picture>
-      <picture>
-        <source srcset="images/le-saphir-salle-ecran-matchs.webp" type="image/webp">
-        <img src="images/le-saphir-salle-ecran-matchs.jpg" width="878" height="1560" loading="lazy"
-             alt="Salle du Saphir avec grand écran pour la diffusion des matchs, tables noires et fauteuils dorés">
+        <img src="images/le-saphir-salle-lounge-banquettes-velours.jpg" width="1000" height="667" loading="lazy"
+             alt="Rangée de banquettes en velours bleu et fauteuils dorés le long de la salle lounge">
       </picture>
     </div>
     <div>
@@ -523,10 +522,8 @@ footer a:hover{color:var(--gold-light)}
   </div>
 </section>
 
-<div class="divider" aria-hidden="true"><svg><use href="#gem"/></svg></div>
-
 <!-- FORMULES -->
-<section class="formules" id="formules">
+<section class="alt" id="formules">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow reveal">Nos formules</p>
@@ -569,38 +566,45 @@ footer a:hover{color:var(--gold-light)}
       <h2 class="section-title reveal d1">Les soirées <em>Saphir</em></h2>
     </div>
     <div class="events">
-      <article class="event reveal">
-        <picture>
-          <source srcset="images/le-saphir-table-pizza-plats-mocktails.webp" type="image/webp">
-          <img src="images/le-saphir-table-pizza-plats-mocktails.jpg" width="878" height="1560" loading="lazy"
-               alt="Table garnie de pizza, viande, salades et mocktails au Saphir">
-        </picture>
-        <div class="event-body">
-          <span class="day">Chaque lundi</span>
-          <h3>Ladies Monday</h3>
-          <p>Chicha offerte dès 10 € de consommation.</p>
-          <p>Chicha Quasar : +5 €.</p>
-        </div>
+      <article class="event monday reveal">
+        <span class="rings" aria-hidden="true"></span>
+        <!-- Chicha stylisée -->
+        <svg class="event-art" viewBox="0 0 120 150" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M52 14h16M55 14v-6h10v6M50 22h20l-4 8H54z"/>
+          <path d="M60 30v44"/>
+          <path d="M48 44h24M50 56h20" opacity=".6"/>
+          <path d="M60 74c-20 0-30 14-30 32 0 18 13 30 30 30s30-12 30-30c0-18-10-32-30-32z"/>
+          <path d="M42 116c10 6 26 6 36 0" opacity=".6"/>
+          <path d="M84 90c14 2 22 10 24 22" />
+          <path d="M18 40c4-6 2-12 6-18M100 34c4-6 2-12 6-18M92 60c3-5 1-9 4-14" opacity=".55"/>
+          <path d="M60 86l6 8-6 14-6-14z" fill="currentColor" fill-opacity=".25"/>
+        </svg>
+        <span class="day">Chaque lundi</span>
+        <h3>Ladies Monday</h3>
+        <p>Chicha offerte dès 10 € de consommation.</p>
+        <p>Chicha Quasar : +5 €.</p>
       </article>
-      <article class="event reveal d1">
-        <picture>
-          <source srcset="images/le-saphir-salle-neon-violet.webp" type="image/webp">
-          <img src="images/le-saphir-salle-neon-violet.jpg" width="878" height="1560" loading="lazy"
-               alt="Salle feutrée aux lumières violettes et fauteuils bordeaux du Saphir">
-        </picture>
-        <div class="event-body">
-          <span class="day">Chaque jeudi · 19h – 22h</span>
-          <h3>Women Only Thursday</h3>
-          <p>Soirée réservée aux femmes.</p>
-          <p>20 € de consommation minimum.</p>
-        </div>
+      <article class="event thursday reveal d1">
+        <span class="rings" aria-hidden="true"></span>
+        <!-- Lune et étoiles -->
+        <svg class="event-art" viewBox="0 0 120 150" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M78 26a44 44 0 1 0 22 70A36 36 0 1 1 78 26z" fill="currentColor" fill-opacity=".12"/>
+          <path d="M96 20l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="currentColor" fill-opacity=".35"/>
+          <path d="M24 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>
+          <path d="M104 64l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z"/>
+          <circle cx="30" cy="120" r="1.5" fill="currentColor"/><circle cx="88" cy="132" r="1.5" fill="currentColor"/><circle cx="14" cy="80" r="1.2" fill="currentColor"/>
+        </svg>
+        <span class="day">Chaque jeudi · 19h – 22h</span>
+        <h3>Women Only Thursday</h3>
+        <p>Soirée réservée aux femmes.</p>
+        <p>20 € de consommation minimum.</p>
       </article>
     </div>
   </div>
 </section>
 
 <!-- CARTE -->
-<section id="carte" class="formules">
+<section id="carte" class="alt">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow reveal">La carte</p>
@@ -610,34 +614,31 @@ footer a:hover{color:var(--gold-light)}
     <div class="menu-strip reveal">
       <picture>
         <source srcset="images/le-saphir-burger-frites-maison.webp" type="image/webp">
-        <img src="images/le-saphir-burger-frites-maison.jpg" width="1000" height="1333" loading="lazy" alt="Burger au cheddar et jambon, frites en panier et sauce">
+        <img src="images/le-saphir-burger-frites-maison.jpg" width="1000" height="1000" loading="lazy" alt="Burger au cheddar et jambon avec panier de frites et sauce">
       </picture>
       <picture>
         <source srcset="images/le-saphir-crepe-chocolat.webp" type="image/webp">
-        <img src="images/le-saphir-crepe-chocolat.jpg" width="878" height="1560" loading="lazy" alt="Crêpe nappée de chocolat et sucre glace">
+        <img src="images/le-saphir-crepe-chocolat.jpg" width="878" height="878" loading="lazy" alt="Crêpe nappée de chocolat et saupoudrée de sucre glace">
       </picture>
       <picture>
         <source srcset="images/le-saphir-assiette-brasserie-oeuf-frites.webp" type="image/webp">
-        <img src="images/le-saphir-assiette-brasserie-oeuf-frites.jpg" width="878" height="1560" loading="lazy" alt="Assiette brasserie avec œuf au plat, cheddar, jambon et frites">
+        <img src="images/le-saphir-assiette-brasserie-oeuf-frites.jpg" width="878" height="878" loading="lazy" alt="Assiette brasserie : œuf au plat sur jambon et cheddar, frites en panier">
       </picture>
     </div>
-    <div class="menu-grid">
-      <a class="menu-item hl reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Chicha</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Entrées</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Pizzas</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Burgers</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Pâtes</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Crêpes</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Brasserie</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Salades</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Desserts</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Mocktails</a>
-      <a class="menu-item reveal" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener"><svg><use href="#gem"/></svg>Boissons</a>
-    </div>
-    <div class="menu-cta reveal">
-      <a class="btn btn-primary" href="https://lesaphirparis.com/carte" target="_blank" rel="noopener">Voir la carte complète
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
+    <ul class="menu-grid">
+      <li class="menu-item hl reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Chicha</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Entrées</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Pizzas</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Burgers</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Pâtes</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Crêpes</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Brasserie</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Salades</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Desserts</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Mocktails</li>
+      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Boissons</li>
+    </ul>
+    <p class="menu-note reveal">La carte complète vous attend sur place.</p>
   </div>
 </section>
 
@@ -648,22 +649,38 @@ footer a:hover{color:var(--gold-light)}
       <p class="eyebrow reveal">Galerie</p>
       <h2 class="section-title reveal d1">Ambiance <em>&amp; saveurs</em></h2>
     </div>
-    <div class="gallery">
-      <figure class="reveal"><picture><source srcset="images/le-saphir-paris-13-facade-restaurant-lounge.webp" type="image/webp"><img src="images/le-saphir-paris-13-facade-restaurant-lounge.jpg" width="1000" height="1333" loading="lazy" alt="Façade illuminée du restaurant Le Saphir, 49 rue de Patay à Paris 13, enseigne dorée et plantes à l'entrée"></picture><figcaption>La façade</figcaption></figure>
-      <figure class="reveal"><picture><source srcset="images/le-saphir-salle-principale-lounge.webp" type="image/webp"><img src="images/le-saphir-salle-principale-lounge.jpg" width="1000" height="533" loading="lazy" alt="Salle principale du Saphir : longues banquettes en velours bleu, fauteuils moutarde et suspensions en verre"></picture><figcaption>La salle principale</figcaption></figure>
-      <figure class="reveal"><picture><source srcset="images/le-saphir-brunch-week-end.webp" type="image/webp"><img src="images/le-saphir-brunch-week-end.jpg" width="878" height="1560" loading="lazy" alt="Assiettes du brunch du week-end : salades, œufs, charcuterie et pâtes sur tables rondes"></picture><figcaption>Le brunch</figcaption></figure>
-      <figure class="reveal"><picture><source srcset="images/le-saphir-table-dressee-salle.webp" type="image/webp"><img src="images/le-saphir-table-dressee-salle.jpg" width="878" height="1560" loading="lazy" alt="Tables dressées avec plats variés et mocktails dans la salle bleue du Saphir"></picture><figcaption>À table</figcaption></figure>
-      <figure class="reveal"><picture><source srcset="images/le-saphir-salle-lounge-banquettes-velours.webp" type="image/webp"><img src="images/le-saphir-salle-lounge-banquettes-velours.jpg" width="1000" height="1333" loading="lazy" alt="Couloir lounge avec banquettes bleues, fauteuils dorés et néon lumineux"></picture><figcaption>Le lounge</figcaption></figure>
-      <figure class="reveal"><picture><source srcset="images/le-saphir-burger-frites-maison.webp" type="image/webp"><img src="images/le-saphir-burger-frites-maison.jpg" width="1000" height="1333" loading="lazy" alt="Burger cheddar et jambon avec panier de frites au Saphir"></picture><figcaption>Burgers</figcaption></figure>
-      <figure class="reveal"><picture><source srcset="images/le-saphir-salle-ecran-matchs.webp" type="image/webp"><img src="images/le-saphir-salle-ecran-matchs.jpg" width="878" height="1560" loading="lazy" alt="Salle avec écran géant pour les matchs, banquettes bleues et fauteuils dorés"></picture><figcaption>Matchs en direct</figcaption></figure>
-      <figure class="reveal"><picture><source srcset="images/le-saphir-crepe-chocolat.webp" type="image/webp"><img src="images/le-saphir-crepe-chocolat.jpg" width="878" height="1560" loading="lazy" alt="Crêpe au chocolat saupoudrée de sucre glace"></picture><figcaption>Crêpes</figcaption></figure>
-      <figure class="reveal"><picture><source srcset="images/le-saphir-salle-neon-violet.webp" type="image/webp"><img src="images/le-saphir-salle-neon-violet.jpg" width="878" height="1560" loading="lazy" alt="Salle aux lumières violettes avec fauteuils bordeaux et miroirs dorés"></picture><figcaption>Salle violette</figcaption></figure>
-    </div>
+    <ul class="gallery reveal">
+      <li><figure>
+        <button type="button" aria-label="Agrandir : la façade">
+          <picture><source srcset="images/le-saphir-paris-13-facade-restaurant-lounge.webp" type="image/webp"><img style="--r:3/2" src="images/le-saphir-paris-13-facade-restaurant-lounge.jpg" width="1000" height="667" loading="lazy" alt="Façade illuminée du Saphir au 49 rue de Patay, enseigne dorée et plantes à l'entrée"></picture>
+        </button><figcaption>La façade</figcaption></figure></li>
+      <li><figure>
+        <button type="button" aria-label="Agrandir : la salle violette">
+          <picture><source srcset="images/le-saphir-salle-neon-violet.webp" type="image/webp"><img style="--r:3/2" src="images/le-saphir-salle-neon-violet.jpg" width="878" height="585" loading="lazy" alt="Salle aux lumières violettes avec fauteuils bordeaux, tables rondes et néon Le Saphir"></picture>
+        </button><figcaption>La salle violette</figcaption></figure></li>
+      <li><figure>
+        <button type="button" aria-label="Agrandir : salle des matchs">
+          <picture><source srcset="images/le-saphir-salle-ecran-matchs.webp" type="image/webp"><img style="--r:3/2" src="images/le-saphir-salle-ecran-matchs.jpg" width="878" height="585" loading="lazy" alt="Banquettes en velours bleu, tables noires et fauteuils dorés de la salle où sont diffusés les matchs"></picture>
+        </button><figcaption>Soirées matchs</figcaption></figure></li>
+      <li><figure>
+        <button type="button" aria-label="Agrandir : le brunch">
+          <picture><source srcset="images/le-saphir-brunch-week-end.webp" type="image/webp"><img style="--r:4/5" src="images/le-saphir-brunch-week-end.jpg" width="878" height="1098" loading="lazy" alt="Assiettes du brunch du week-end : pâtes, salades composées et crêpes sur une table ronde"></picture>
+        </button><figcaption>Le brunch</figcaption></figure></li>
+      <li><figure>
+        <button type="button" aria-label="Agrandir : à partager">
+          <picture><source srcset="images/le-saphir-table-pizza-plats-mocktails.webp" type="image/webp"><img style="--r:4/5" src="images/le-saphir-table-pizza-plats-mocktails.jpg" width="878" height="1098" loading="lazy" alt="Table garnie : pizza, viande grillée, salades et mocktails"></picture>
+        </button><figcaption>À partager</figcaption></figure></li>
+      <li><figure>
+        <button type="button" aria-label="Agrandir : à table">
+          <picture><source srcset="images/le-saphir-table-dressee-salle.webp" type="image/webp"><img style="--r:4/5" src="images/le-saphir-table-dressee-salle.jpg" width="878" height="1098" loading="lazy" alt="Tables dressées avec plats variés et mocktails, banquette bleue et fauteuil doré"></picture>
+        </button><figcaption>À table</figcaption></figure></li>
+    </ul>
+    <p class="swipe-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Faites glisser</p>
   </div>
 </section>
 
 <!-- HORAIRES + PLAN -->
-<section id="infos" class="formules">
+<section id="infos" class="alt">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow reveal">Horaires &amp; accès</p>
@@ -685,8 +702,8 @@ footer a:hover{color:var(--gold-light)}
         <p class="kitchen">Cuisine ouverte jusqu'à <b>3h</b> du dimanche au jeudi, et jusqu'à <b>5h</b> le vendredi et le samedi.</p>
         <div class="addr">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          <address style="font-style:normal">
-            <strong style="font-weight:500">Le Saphir</strong><br>49 rue de Patay, 75013 Paris<br>
+          <address>
+            <strong>Le Saphir</strong><br>49 rue de Patay, 75013 Paris<br>
             <a class="gold" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Saphir+49+rue+de+Patay+75013+Paris" target="_blank" rel="noopener">Itinéraire →</a>
           </address>
         </div>
@@ -727,11 +744,11 @@ footer a:hover{color:var(--gold-light)}
 </section>
 
 <!-- SAPHIR CLUB -->
-<section id="club" class="club formules">
+<section id="club" class="club alt">
   <div class="wrap">
     <p class="eyebrow reveal">Carte fidélité</p>
     <h2 class="section-title reveal d1">Le <em>Saphir Club</em></h2>
-    <p class="lead reveal d2">Votre carte de fidélité Saphir Club vous accompagne à chaque visite. Retrouvez-la en ligne en quelques secondes.</p>
+    <p class="lead reveal d2">Votre carte de fidélité Saphir Club vous accompagne à chaque visite. Elle se demande directement au Saphir.</p>
     <div class="club-card reveal" aria-hidden="true">
       <div class="top"><span class="label">Membre</span><svg><use href="#gem"/></svg></div>
       <div class="chip"></div>
@@ -740,7 +757,10 @@ footer a:hover{color:var(--gold-light)}
         <div class="name">Saphir Club</div>
       </div>
     </div>
-    <a class="btn btn-primary reveal" href="https://lesaphirparis.com/club/retrouver-carte" target="_blank" rel="noopener">Retrouver ma carte</a>
+    <p class="club-ask reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+      Demandez votre carte fidélité sur place
+    </p>
   </div>
 </section>
 </main>
@@ -749,7 +769,7 @@ footer a:hover{color:var(--gold-light)}
   <div class="wrap">
     <div class="foot">
       <div>
-        <a href="#accueil" class="brand" style="margin-bottom:14px"><svg aria-hidden="true"><use href="#gem"/></svg><span class="brand-name">Le Saphir</span></a>
+        <a href="#accueil" class="brand"><svg aria-hidden="true"><use href="#gem"/></svg><span class="brand-name">Le Saphir</span></a>
         <p>Restaurant &amp; lounge chicha à Paris 13. Deux étages, trois salles, brunch le week-end et matchs en direct.</p>
       </div>
       <div>
@@ -770,14 +790,18 @@ footer a:hover{color:var(--gold-light)}
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
 </a>
 
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo agrandie">
-  <button type="button" aria-label="Fermer">×</button>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo en plein écran">
+  <button type="button" class="lb-btn lb-close" aria-label="Fermer">×</button>
+  <button type="button" class="lb-btn lb-prev" aria-label="Photo précédente">‹</button>
   <img alt="">
+  <button type="button" class="lb-btn lb-next" aria-label="Photo suivante">›</button>
+  <p class="lb-cap"></p>
 </div>
 
 <script>
 (function(){
   var body=document.body, header=document.querySelector('.site-header'), toggle=document.querySelector('.nav-toggle');
+
   // Menu hamburger
   function setNav(open){
     body.classList.toggle('nav-open',open);
@@ -786,50 +810,65 @@ footer a:hover{color:var(--gold-light)}
   }
   toggle.addEventListener('click',function(){setNav(!body.classList.contains('nav-open'))});
   document.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){setNav(false)})});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'){setNav(false);closeLb()}});
 
-  // Header au défilement
+  // En-tête au défilement
   function onScroll(){header.classList.toggle('scrolled',window.scrollY>30)}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 
-  // Animations au défilement
-  var els=document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
+  // Animations au défilement (le contenu reste visible si elles ne se déclenchent pas)
+  var els=[].slice.call(document.querySelectorAll('.reveal'));
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    document.documentElement.classList.add('anim');
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
-    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    },{rootMargin:'0px 0px -6% 0px',threshold:.05});
     els.forEach(function(el){io.observe(el)});
-  } else els.forEach(function(el){el.classList.add('in')});
+    // Filet de sécurité : tout s'affiche après 2,5 s quoi qu'il arrive
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},2500);
+  }
 
-  // Ouvert / fermé (heure de Paris)
-  // Horaires : [ouverture, fermeture le lendemain] en heures ; index 0 = dimanche
+  // Ouvert / fermé (heure de Paris) ; index 0 = dimanche, [ouverture, fermeture le lendemain]
   var H={0:[12,4],1:[19,4],2:[19,4],3:[19,4],4:[19,4],5:[19,5],6:[12,5]};
   try{
     var parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Paris',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
-    var wd={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[parts.find(function(p){return p.type==='weekday'}).value];
-    var h=+parts.find(function(p){return p.type==='hour'}).value % 24, m=+parts.find(function(p){return p.type==='minute'}).value;
-    var t=h+m/60, yd=(wd+6)%7, open=false, closeAt;
+    var get=function(t){return parts.find(function(p){return p.type===t}).value};
+    var wd={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[get('weekday')];
+    var t=(+get('hour')%24)+(+get('minute'))/60, yd=(wd+6)%7, open=false, closeAt, rowDay=wd;
     if(t>=H[wd][0]){open=true;closeAt=H[wd][1]}
-    else if(t<H[yd][1]){open=true;closeAt=H[yd][1]}
+    else if(t<H[yd][1]){open=true;closeAt=H[yd][1];rowDay=yd}
     var st=document.getElementById('openStatus');
     if(open){st.classList.add('is-open');st.lastElementChild.textContent='Ouvert · jusqu’à '+closeAt+'h'}
     else{st.lastElementChild.textContent='Ouvre à '+H[wd][0]+'h aujourd’hui'}
-    var row=document.querySelector('.hours tr[data-day="'+(open&&t<H[yd][1]?yd:wd)+'"]');
+    var row=document.querySelector('.hours tr[data-day="'+rowDay+'"]');
     if(row)row.classList.add('today');
   }catch(e){}
 
   document.getElementById('year').textContent=new Date().getFullYear();
 
-  // Lightbox galerie
-  var lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img');
-  function closeLb(){lb.classList.remove('open')}
-  document.querySelectorAll('.gallery figure').forEach(function(f){
-    f.setAttribute('tabindex','0');
-    function open(){var i=f.querySelector('img');lbImg.src=i.currentSrc||i.src;lbImg.alt=i.alt;lb.classList.add('open');lb.querySelector('button').focus()}
-    f.addEventListener('click',open);
-    f.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+  // Lightbox de la galerie
+  var lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img'), lbCap=lb.querySelector('.lb-cap');
+  var items=[].slice.call(document.querySelectorAll('.gallery figure')), cur=0, lastFocus=null;
+  function show(i){
+    cur=(i+items.length)%items.length;
+    var img=items[cur].querySelector('img');
+    lbImg.src=img.currentSrc||img.src; lbImg.alt=img.alt;
+    lbCap.textContent=items[cur].querySelector('figcaption').textContent;
+  }
+  function openLb(i){lastFocus=document.activeElement;show(i);lb.classList.add('open');body.style.overflow='hidden';lb.querySelector('.lb-close').focus()}
+  function closeLb(){if(!lb.classList.contains('open'))return;lb.classList.remove('open');body.style.overflow='';if(lastFocus)lastFocus.focus()}
+  items.forEach(function(f,i){f.querySelector('button').addEventListener('click',function(){openLb(i)})});
+  lb.querySelector('.lb-close').addEventListener('click',closeLb);
+  lb.querySelector('.lb-prev').addEventListener('click',function(e){e.stopPropagation();show(cur-1)});
+  lb.querySelector('.lb-next').addEventListener('click',function(e){e.stopPropagation();show(cur+1)});
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLb()});
+  var x0=null;
+  lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)show(cur+(dx<0?1:-1));x0=null});
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){setNav(false);closeLb()}
+    if(lb.classList.contains('open')){if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1)}
   });
-  lb.addEventListener('click',function(e){if(e.target!==lbImg)closeLb()});
 })();
 </script>
 </body>
