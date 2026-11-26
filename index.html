@@ -12,16 +12,16 @@
 <meta property="og:site_name" content="Le Saphir Paris">
 <meta property="og:title" content="Le Saphir Paris 13 — Restaurant &amp; Lounge Chicha">
 <meta property="og:description" content="Restaurant &amp; lounge chicha au 49 rue de Patay, Paris 13. Formules dès 20 €, brunch le week-end, matchs en direct, ouvert jusqu'à 5h.">
-<meta property="og:image" content="images/le-saphir-paris-13-chicha-et-plats.jpg">
-<meta property="og:image:width" content="1086">
-<meta property="og:image:height" content="1086">
-<meta property="og:image:alt" content="Chicha et assortiment de plats sur une table du Saphir, salle lounge bleu nuit">
+<meta property="og:image" content="images/le-saphir-paris-13-table-dressee-salle.jpg">
+<meta property="og:image:width" content="878">
+<meta property="og:image:height" content="1098">
+<meta property="og:image:alt" content="Tables dressées avec plats variés et mocktails dans la salle bleu nuit du Saphir">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/le-saphir-paris-13-chicha-et-plats.webp" type="image/webp">
+<link rel="preload" as="image" href="images/le-saphir-paris-13-table-dressee-salle.webp" type="image/webp">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M16 8h32l12 16-28 34L4 24z' fill='%232a5bd7'/%3E%3Cpath d='M4 24h56M16 8l8 16 8 34 8-34 8-16M24 24l8-16 8 16' fill='none' stroke='%23cfd8ea' stroke-width='2'/%3E%3C/svg%3E">
 
@@ -33,7 +33,7 @@
   "alternateName": "Le Saphir Paris 13 — Restaurant & Lounge",
   "description": "Restaurant & lounge chicha à Paris 13 : 2 étages, 3 salles dont un espace réservé aux femmes, brunch samedi et dimanche, matchs diffusés en direct.",
   "telephone": "+33660971309",
-  "image": "images/le-saphir-paris-13-chicha-et-plats.jpg",
+  "image": "images/le-saphir-paris-13-table-dressee-salle.jpg",
   "servesCuisine": ["Brasserie", "Pizzas", "Burgers", "Pâtes", "Crêpes", "Brunch"],
   "acceptsReservations": "True",
   "address": {
@@ -76,7 +76,7 @@
   --radius:16px;
   --gutter:clamp(16px,4.5vw,48px);
   --max:1180px;
-  --section:clamp(48px,7vw,88px);
+  --section:clamp(34px,5vw,62px);
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:72px}
@@ -181,7 +181,7 @@ body.nav-open{overflow:hidden}
 /* ---------- Hero ---------- */
 .hero{position:relative;padding:68px 0 calc(var(--section) * .7)}
 .hero-media{position:relative}
-.hero-media img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 40%}
+.hero-media img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 62%}
 /* Dégradé uniquement sur le bas de la photo, derrière le début du texte */
 .hero-media::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(180deg,rgba(6,13,31,0),var(--night))}
 .hero-content{position:relative;margin-top:-28px}
@@ -206,7 +206,7 @@ body.nav-open{overflow:hidden}
   .hero-media{order:2;border-radius:280px 280px var(--radius) var(--radius);overflow:hidden;
     box-shadow:0 40px 90px -30px rgba(0,0,0,.8),0 0 0 1px rgba(232,204,140,.3)}
   .hero-media::after{display:none}
-  .hero-media img{aspect-ratio:4/5;object-position:center 45%}
+  .hero-media img{aspect-ratio:4/5;object-position:center}
   .hero-content{margin-top:0}
   .hero-gem{display:block}
 }
@@ -215,7 +215,7 @@ body.nav-open{overflow:hidden}
 
 /* ---------- Sections ---------- */
 section{position:relative;padding:var(--section) 0}
-.section-head{margin-bottom:clamp(24px,4vw,40px)}
+.section-head{margin-bottom:clamp(20px,3vw,32px)}
 .alt{background:linear-gradient(180deg,var(--night),var(--night-2) 50%,var(--night))}
 
 /* Expérience */
@@ -247,6 +247,9 @@ section{position:relative;padding:var(--section) 0}
 }
 .card:hover{transform:translateY(-4px);border-color:rgba(232,204,140,.45);box-shadow:0 30px 60px -30px rgba(42,91,215,.5)}
 .card.featured{border-color:rgba(232,204,140,.5);background:radial-gradient(120% 60% at 50% 0%,rgba(42,91,215,.38),transparent 70%),linear-gradient(170deg,rgba(20,38,82,.88),rgba(8,17,40,.95))}
+.card-media{position:relative;display:block;margin:-28px -22px 20px;border-radius:19px 19px 0 0;overflow:hidden}
+.card-media img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.card-media::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;background:linear-gradient(180deg,rgba(6,13,31,0),rgba(9,19,45,.92))}
 .card-tag{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.7rem;font-weight:500}
 .card h3{font-size:2rem}
 .card .price{font-family:var(--serif);font-size:3.2rem;line-height:1;margin:.3em 0 .2em;color:#fff}
@@ -278,16 +281,11 @@ section{position:relative;padding:var(--section) 0}
 /* Carte */
 .menu-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
 .menu-strip img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px}
-.menu-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-@media (min-width:640px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
-@media (min-width:960px){.menu-grid{grid-template-columns:repeat(4,1fr)}}
-.menu-item{
-  display:flex;align-items:center;gap:12px;padding:16px;border-radius:14px;
-  border:1px solid var(--line);background:rgba(15,29,64,.45);
-  font-family:var(--serif);font-size:1.35rem;font-weight:500;
-}
-.menu-item svg{width:14px;height:14px;flex:none}
-.menu-item.hl{border-color:rgba(232,204,140,.45);background:linear-gradient(135deg,rgba(42,91,215,.32),rgba(15,29,64,.45))}
+.menu-grid{list-style:none;margin:6px 0 0;padding:0;columns:2;column-gap:28px}
+@media (min-width:760px){.menu-grid{columns:3;column-gap:48px}}
+.menu-item{display:flex;align-items:center;gap:12px;padding:9px 0;break-inside:avoid;
+  font-family:var(--serif);font-size:1.4rem;font-weight:500;color:var(--text)}
+.menu-item svg{width:13px;height:13px;flex:none}
 .menu-note{margin:22px 0 0;text-align:center;color:var(--silver-dim);font-size:.92rem}
 
 /* Galerie */
@@ -458,9 +456,9 @@ footer .brand{margin-bottom:12px}
   <div class="wrap hero-grid">
     <div class="hero-media">
       <picture>
-        <source srcset="images/le-saphir-paris-13-chicha-et-plats.webp" type="image/webp">
-        <img src="images/le-saphir-paris-13-chicha-et-plats.jpg" width="1086" height="1086" fetchpriority="high"
-             alt="Chicha entourée de plats colorés — pizza, viande, salades et cocktails — dans la salle lounge bleu nuit du Saphir, écran au logo Le Saphir en fond">
+        <source srcset="images/le-saphir-paris-13-table-dressee-salle.webp" type="image/webp">
+        <img src="images/le-saphir-paris-13-table-dressee-salle.jpg" width="878" height="1098" fetchpriority="high"
+             alt="Tables dressées au Saphir : assiettes variées, desserts et mocktails, banquette en velours bleu et fauteuil doré">
       </picture>
     </div>
     <div class="hero-content">
@@ -491,9 +489,9 @@ footer .brand{margin-bottom:12px}
              alt="Salle principale du Saphir : longues banquettes en velours bleu, tables noires et fauteuils moutarde">
       </picture>
       <picture class="p2">
-        <source srcset="images/le-saphir-salle-lounge-banquettes-velours.webp" type="image/webp">
-        <img src="images/le-saphir-salle-lounge-banquettes-velours.jpg" width="1000" height="667" loading="lazy"
-             alt="Rangée de banquettes en velours bleu et fauteuils dorés le long de la salle lounge">
+        <source srcset="images/le-saphir-salle-neon-violet.webp" type="image/webp">
+        <img src="images/le-saphir-salle-neon-violet.jpg" width="878" height="585" loading="lazy"
+             alt="Salle intimiste aux lumières violettes : fauteuils bordeaux, tables rondes et néon Le Saphir">
       </picture>
     </div>
     <div>
@@ -531,6 +529,10 @@ footer .brand{margin-bottom:12px}
     </div>
     <div class="cards">
       <article class="card reveal">
+        <picture class="card-media">
+          <source srcset="images/le-saphir-burger-frites-maison.webp" type="image/webp">
+          <img src="images/le-saphir-burger-frites-maison.jpg" width="1000" height="667" loading="lazy" alt="Burger au cheddar et jambon, panier de frites et sauce maison">
+        </picture>
         <p class="card-tag">Dimanche au jeudi</p>
         <h3>Formule Repas</h3>
         <p class="price">20 €</p>
@@ -538,6 +540,10 @@ footer .brand{margin-bottom:12px}
         <p class="note">Valable du dimanche au jeudi.</p>
       </article>
       <article class="card featured reveal d1">
+        <picture class="card-media">
+          <source srcset="images/le-saphir-paris-13-chicha-et-plats.webp" type="image/webp">
+          <img src="images/le-saphir-paris-13-chicha-et-plats.jpg" width="1000" height="667" loading="lazy" alt="Chicha entourée de plats colorés — pizza, viande, salades et cocktails — dans la salle lounge du Saphir">
+        </picture>
         <p class="card-tag">Chicha · Plat · Soft</p>
         <h3>Formule Saphir</h3>
         <ul>
@@ -547,6 +553,10 @@ footer .brand{margin-bottom:12px}
         </ul>
       </article>
       <article class="card reveal d2">
+        <picture class="card-media">
+          <source srcset="images/le-saphir-table-pizza-plats-mocktails.webp" type="image/webp">
+          <img src="images/le-saphir-table-pizza-plats-mocktails.jpg" width="878" height="585" loading="lazy" alt="Grande table garnie à partager : pizza, viande grillée, salades et mocktails">
+        </picture>
         <p class="card-tag">Sur réservation</p>
         <h3>Formule Anniversaire</h3>
         <p class="price">40 €</p>
@@ -568,16 +578,14 @@ footer .brand{margin-bottom:12px}
     <div class="events">
       <article class="event monday reveal">
         <span class="rings" aria-hidden="true"></span>
-        <!-- Chicha stylisée -->
+        <!-- Gemme saphir stylisée et étoiles -->
         <svg class="event-art" viewBox="0 0 120 150" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M52 14h16M55 14v-6h10v6M50 22h20l-4 8H54z"/>
-          <path d="M60 30v44"/>
-          <path d="M48 44h24M50 56h20" opacity=".6"/>
-          <path d="M60 74c-20 0-30 14-30 32 0 18 13 30 30 30s30-12 30-30c0-18-10-32-30-32z"/>
-          <path d="M42 116c10 6 26 6 36 0" opacity=".6"/>
-          <path d="M84 90c14 2 22 10 24 22" />
-          <path d="M18 40c4-6 2-12 6-18M100 34c4-6 2-12 6-18M92 60c3-5 1-9 4-14" opacity=".55"/>
-          <path d="M60 86l6 8-6 14-6-14z" fill="currentColor" fill-opacity=".25"/>
+          <path d="M40 46h40l16 20-36 46-36-46z" fill="currentColor" fill-opacity=".12"/>
+          <path d="M24 66h72M40 46l10 20 10 46 10-46 10-20M50 66l10-20 10 20" opacity=".7"/>
+          <path d="M98 18l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="currentColor" fill-opacity=".35"/>
+          <path d="M22 26l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/>
+          <path d="M104 92l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z"/>
+          <circle cx="26" cy="122" r="1.5" fill="currentColor"/><circle cx="90" cy="134" r="1.5" fill="currentColor"/><circle cx="12" cy="86" r="1.2" fill="currentColor"/>
         </svg>
         <span class="day">Chaque lundi</span>
         <h3>Ladies Monday</h3>
@@ -613,10 +621,6 @@ footer .brand{margin-bottom:12px}
     </div>
     <div class="menu-strip reveal">
       <picture>
-        <source srcset="images/le-saphir-burger-frites-maison.webp" type="image/webp">
-        <img src="images/le-saphir-burger-frites-maison.jpg" width="1000" height="1000" loading="lazy" alt="Burger au cheddar et jambon avec panier de frites et sauce">
-      </picture>
-      <picture>
         <source srcset="images/le-saphir-crepe-chocolat.webp" type="image/webp">
         <img src="images/le-saphir-crepe-chocolat.jpg" width="878" height="878" loading="lazy" alt="Crêpe nappée de chocolat et saupoudrée de sucre glace">
       </picture>
@@ -624,19 +628,23 @@ footer .brand{margin-bottom:12px}
         <source srcset="images/le-saphir-assiette-brasserie-oeuf-frites.webp" type="image/webp">
         <img src="images/le-saphir-assiette-brasserie-oeuf-frites.jpg" width="878" height="878" loading="lazy" alt="Assiette brasserie : œuf au plat sur jambon et cheddar, frites en panier">
       </picture>
+      <picture>
+        <source srcset="images/le-saphir-brunch-week-end.webp" type="image/webp">
+        <img src="images/le-saphir-brunch-week-end.jpg" width="878" height="878" loading="lazy" alt="Assiettes du brunch du week-end : pâtes, salades composées et crêpes">
+      </picture>
     </div>
-    <ul class="menu-grid">
-      <li class="menu-item hl reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Chicha</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Entrées</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Pizzas</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Burgers</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Pâtes</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Crêpes</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Brasserie</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Salades</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Desserts</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Mocktails</li>
-      <li class="menu-item reveal"><svg aria-hidden="true"><use href="#gem"/></svg>Boissons</li>
+    <ul class="menu-grid reveal">
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Chicha</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Entrées</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Pizzas</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Burgers</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Pâtes</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Crêpes</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Brasserie</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Salades</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Desserts</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Mocktails</li>
+      <li class="menu-item"><svg aria-hidden="true"><use href="#gem"/></svg>Boissons</li>
     </ul>
     <p class="menu-note reveal">La carte complète vous attend sur place.</p>
   </div>
@@ -647,7 +655,7 @@ footer .brand{margin-bottom:12px}
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow reveal">Galerie</p>
-      <h2 class="section-title reveal d1">Ambiance <em>&amp; saveurs</em></h2>
+      <h2 class="section-title reveal d1">Ambiance <em>&amp; décor</em></h2>
     </div>
     <ul class="gallery reveal">
       <li><figure>
@@ -655,25 +663,13 @@ footer .brand{margin-bottom:12px}
           <picture><source srcset="images/le-saphir-paris-13-facade-restaurant-lounge.webp" type="image/webp"><img style="--r:3/2" src="images/le-saphir-paris-13-facade-restaurant-lounge.jpg" width="1000" height="667" loading="lazy" alt="Façade illuminée du Saphir au 49 rue de Patay, enseigne dorée et plantes à l'entrée"></picture>
         </button><figcaption>La façade</figcaption></figure></li>
       <li><figure>
-        <button type="button" aria-label="Agrandir : la salle violette">
-          <picture><source srcset="images/le-saphir-salle-neon-violet.webp" type="image/webp"><img style="--r:3/2" src="images/le-saphir-salle-neon-violet.jpg" width="878" height="585" loading="lazy" alt="Salle aux lumières violettes avec fauteuils bordeaux, tables rondes et néon Le Saphir"></picture>
-        </button><figcaption>La salle violette</figcaption></figure></li>
+        <button type="button" aria-label="Agrandir : le lounge">
+          <picture><source srcset="images/le-saphir-salle-lounge-banquettes-velours.webp" type="image/webp"><img style="--r:3/2" src="images/le-saphir-salle-lounge-banquettes-velours.jpg" width="1000" height="667" loading="lazy" alt="Rangée de banquettes en velours bleu et fauteuils dorés le long de la salle lounge"></picture>
+        </button><figcaption>Le lounge</figcaption></figure></li>
       <li><figure>
-        <button type="button" aria-label="Agrandir : salle des matchs">
+        <button type="button" aria-label="Agrandir : soirées matchs">
           <picture><source srcset="images/le-saphir-salle-ecran-matchs.webp" type="image/webp"><img style="--r:3/2" src="images/le-saphir-salle-ecran-matchs.jpg" width="878" height="585" loading="lazy" alt="Banquettes en velours bleu, tables noires et fauteuils dorés de la salle où sont diffusés les matchs"></picture>
         </button><figcaption>Soirées matchs</figcaption></figure></li>
-      <li><figure>
-        <button type="button" aria-label="Agrandir : le brunch">
-          <picture><source srcset="images/le-saphir-brunch-week-end.webp" type="image/webp"><img style="--r:4/5" src="images/le-saphir-brunch-week-end.jpg" width="878" height="1098" loading="lazy" alt="Assiettes du brunch du week-end : pâtes, salades composées et crêpes sur une table ronde"></picture>
-        </button><figcaption>Le brunch</figcaption></figure></li>
-      <li><figure>
-        <button type="button" aria-label="Agrandir : à partager">
-          <picture><source srcset="images/le-saphir-table-pizza-plats-mocktails.webp" type="image/webp"><img style="--r:4/5" src="images/le-saphir-table-pizza-plats-mocktails.jpg" width="878" height="1098" loading="lazy" alt="Table garnie : pizza, viande grillée, salades et mocktails"></picture>
-        </button><figcaption>À partager</figcaption></figure></li>
-      <li><figure>
-        <button type="button" aria-label="Agrandir : à table">
-          <picture><source srcset="images/le-saphir-table-dressee-salle.webp" type="image/webp"><img style="--r:4/5" src="images/le-saphir-table-dressee-salle.jpg" width="878" height="1098" loading="lazy" alt="Tables dressées avec plats variés et mocktails, banquette bleue et fauteuil doré"></picture>
-        </button><figcaption>À table</figcaption></figure></li>
     </ul>
     <p class="swipe-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Faites glisser</p>
   </div>
