@@ -236,6 +236,29 @@ img.ph{outline:none}
 .menu li .n{font:400 1.45rem/1.2 var(--serif);color:#fff}
 .menu li .d{flex:1;min-width:20px;border-bottom:1px dotted rgba(217,222,232,.3);transform:translateY(-6px)}
 .menu li svg{width:11px;height:11px;color:var(--gold);flex:none;transform:translateY(-2px)}
+
+/* Carte : onglets + plats */
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--gutter)*-1) 34px;padding:0 var(--gutter) 4px;-webkit-overflow-scrolling:touch}
+.tabs::-webkit-scrollbar{display:none}
+@media (min-width:1000px){.tabs{flex-wrap:wrap;justify-content:center;overflow:visible}}
+.tabs button{flex:none;min-height:44px;padding:0 18px;background:none;border:1px solid var(--frame);color:var(--silver);font:400 .74rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.tabs button:hover{border-color:var(--sapphire)}
+.tabs button[aria-selected="true"]{background:var(--sapphire);border-color:var(--sapphire);color:#070d1c}
+.tabs button:focus-visible{outline:2px solid var(--sapphire);outline-offset:3px}
+.pan-intro{text-align:center;color:var(--muted);margin:-10px 0 28px}
+.dishes{list-style:none;margin:0;padding:0;display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+.dish{border:1px solid var(--line);background:rgba(14,23,48,.55)}
+.dish img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.dish-t{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:16px 18px 0}
+.dish .n{font:400 1.3rem/1.2 var(--serif);color:#fff}
+.dish .p{font:400 1.05rem/1 var(--sans);color:var(--gold);white-space:nowrap}
+.dish p{padding:6px 18px 0;margin:0;color:var(--muted);font-size:.92rem}
+.dish::after{content:"";display:block;height:16px}
+.dish-list{list-style:none;max-width:640px;margin:30px auto 0;padding:0}
+.dish-list li{display:flex;align-items:baseline;gap:12px;padding:11px 0}
+.dish-list .n{font:400 1.3rem/1.2 var(--serif);color:#fff}
+.dish-list .d{flex:1;min-width:20px;border-bottom:1px dotted rgba(217,222,232,.3);transform:translateY(-6px)}
+.dish-list .p{color:var(--gold);white-space:nowrap}
 .menu-foot{text-align:center;margin-top:48px;color:var(--muted)}
 
 /* Galerie */
@@ -395,14 +418,14 @@ footer a:hover{color:#fff}
     </div>
     <div class="blocks three">
       <article class="block fade">
-        <img class="ph" style="--r:3/2" src="images/le-saphir-burger-frites-maison.webp" width="1000" height="667" alt="Burger cheddar et jambon avec panier de frites maison" loading="lazy" decoding="async">
+        <img class="ph" style="--r:3/2" src="images/carte/formule-repas.webp" width="900" height="675" alt="Formule repas : burger, nems et fondant au chocolat" loading="lazy" decoding="async">
         <span class="kicker">Dimanche au jeudi</span>
         <h3>Formule Repas</h3>
         <p class="big-price">20 €</p>
         <p>Entrée et plat, ou plat et dessert.</p>
       </article>
       <article class="block fade">
-        <img class="ph" style="--r:3/2" src="images/le-saphir-paris-13-chicha-et-plats.webp" width="1000" height="667" alt="Chicha entourée de plats et de mocktails dans la salle bleue du Saphir" loading="lazy" decoding="async">
+        <img class="ph" style="--r:3/2" src="images/carte/formule-saphir.webp" width="900" height="900" alt="Formule Saphir : chicha Quasar, pâtes au saumon et soft" loading="lazy" decoding="async">
         <span class="kicker">Chicha · Plat · Soft</span>
         <h3>Formule Saphir</h3>
         <div class="row"><span class="n">Classic<small>Chicha plate, plat, soft</small></span><span class="d" aria-hidden="true"></span><span class="p">30 €</span></div>
@@ -457,33 +480,9 @@ footer a:hover{color:#fff}
       <h2 id="carte-titre">La carte</h2>
       <p>Cuisine jusqu'à 3h du dimanche au jeudi, jusqu'à 5h le vendredi et le samedi.</p>
     </div>
-    <div class="menu">
-      <div class="fade">
-        <h3>Lounge</h3>
-        <ul>
-          <li><span class="n">Chicha</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-          <li><span class="n">Mocktails</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-          <li><span class="n">Boissons</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-        </ul>
-        <h3 style="margin-top:36px">Douceurs</h3>
-        <ul>
-          <li><span class="n">Crêpes</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-          <li><span class="n">Desserts</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-        </ul>
-      </div>
-      <div class="fade">
-        <h3>Cuisine</h3>
-        <ul>
-          <li><span class="n">Entrées</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-          <li><span class="n">Salades</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-          <li><span class="n">Pizzas</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-          <li><span class="n">Burgers</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-          <li><span class="n">Pâtes</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-          <li><span class="n">Brasserie</span><span class="d" aria-hidden="true"></span><svg aria-hidden="true"><use href="#gem"/></svg></li>
-        </ul>
-      </div>
-    </div>
-    <p class="menu-foot fade">La carte complète, avec les prix, est disponible sur place.</p>
+    <div class="tabs" role="tablist" aria-label="Catégories de la carte"><button type="button" role="tab" id="tab-chicha" aria-controls="pan-chicha" aria-selected="true">Chicha</button><button type="button" role="tab" id="tab-entrees" aria-controls="pan-entrees" aria-selected="false" tabindex="-1">Entrées</button><button type="button" role="tab" id="tab-pizzas" aria-controls="pan-pizzas" aria-selected="false" tabindex="-1">Pizzas</button><button type="button" role="tab" id="tab-burgers" aria-controls="pan-burgers" aria-selected="false" tabindex="-1">Burgers</button><button type="button" role="tab" id="tab-pates" aria-controls="pan-pates" aria-selected="false" tabindex="-1">Pâtes</button><button type="button" role="tab" id="tab-brasserie" aria-controls="pan-brasserie" aria-selected="false" tabindex="-1">Brasserie</button><button type="button" role="tab" id="tab-salades" aria-controls="pan-salades" aria-selected="false" tabindex="-1">Salades</button><button type="button" role="tab" id="tab-crepes" aria-controls="pan-crepes" aria-selected="false" tabindex="-1">Crêpes</button><button type="button" role="tab" id="tab-desserts" aria-controls="pan-desserts" aria-selected="false" tabindex="-1">Desserts</button><button type="button" role="tab" id="tab-mocktails" aria-controls="pan-mocktails" aria-selected="false" tabindex="-1">Mocktails</button><button type="button" role="tab" id="tab-boissons" aria-controls="pan-boissons" aria-selected="false" tabindex="-1">Boissons</button></div>
+    <div class="pan" role="tabpanel" id="pan-chicha" aria-labelledby="tab-chicha"><p class="pan-intro">Choisissez votre foyer, votre goût et votre soft.</p><ul class="dishes"><li class="dish"><img src="images/carte/chicha-classique.webp" width="900" height="900" alt="Classique" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Classique</span><span class="p">15 €</span></div><p>Avec soft</p></li><li class="dish"><img src="images/carte/chicha-khaloud.webp" width="900" height="900" alt="Khaloud" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Khaloud</span><span class="p">20 €</span></div></li><li class="dish"><img src="images/carte/chicha-quasar.webp" width="900" height="900" alt="Quasar" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Quasar</span><span class="p">25 €</span></div></li><li class="dish"><img src="images/carte/chicha-tete-quasar.webp" width="900" height="900" alt="Tête supplémentaire" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Tête supplémentaire</span><span class="p">5 €</span></div><p>Classic, Khaloud ou Quasar</p></li></ul></div><div class="pan" role="tabpanel" id="pan-entrees" aria-labelledby="tab-entrees" hidden><p class="pan-intro">À partager ou pour ouvrir le repas.</p><ul class="dishes"><li class="dish"><img src="images/carte/entree-crevettes-tempura.webp" width="900" height="900" alt="Crevettes tempura" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Crevettes tempura</span><span class="p">10 €</span></div><p>Servies par 4</p></li><li class="dish"><img src="images/carte/entree-burrata.webp" width="900" height="900" alt="Burrata" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Burrata</span><span class="p">13 €</span></div></li><li class="dish"><img src="images/carte/entree-nems-poulet.webp" width="900" height="900" alt="Nems poulet" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Nems poulet</span><span class="p">10 €</span></div><p>Servis par 4</p></li></ul></div><div class="pan" role="tabpanel" id="pan-pizzas" aria-labelledby="tab-pizzas" hidden><ul class="dishes"><li class="dish"><img src="images/carte/pizza-pepperoni.webp" width="900" height="900" alt="Pepperoni" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Pepperoni</span><span class="p">17 €</span></div></li><li class="dish"><img src="images/carte/pizza-orientale.webp" width="900" height="900" alt="Pizza orientale" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Pizza orientale</span><span class="p">18 €</span></div></li><li class="dish"><img src="images/carte/pizza-reine.webp" width="900" height="900" alt="Reine" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Reine</span><span class="p">15 €</span></div></li><li class="dish"><img src="images/carte/pizza-chicken.webp" width="900" height="900" alt="Pizza chicken" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Pizza chicken</span><span class="p">15 €</span></div></li><li class="dish"><img src="images/carte/pizza-saumon.webp" width="900" height="394" alt="Pizza saumon" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Pizza saumon</span><span class="p">18 €</span></div></li><li class="dish"><img src="images/carte/pizza-vegetarienne.webp" width="900" height="554" alt="Végétarienne" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Végétarienne</span><span class="p">15 €</span></div></li></ul><ul class="dish-list"><li><span class="n">Marguerita</span><span class="d" aria-hidden="true"></span><span class="p">14 €</span></li></ul></div><div class="pan" role="tabpanel" id="pan-burgers" aria-labelledby="tab-burgers" hidden><ul class="dishes"><li class="dish"><img src="images/carte/burger-supreme.webp" width="900" height="554" alt="Burger Supreme" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Burger Supreme</span><span class="p">17 €</span></div></li><li class="dish"><img src="images/carte/burger-beef.webp" width="900" height="554" alt="Burger Beef" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Burger Beef</span><span class="p">15 €</span></div></li><li class="dish"><img src="images/carte/burger-chicken.webp" width="900" height="554" alt="Burger Chicken" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Burger Chicken</span><span class="p">15 €</span></div></li><li class="dish"><img src="images/carte/frites.webp" width="900" height="554" alt="Portion de frites" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Portion de frites</span><span class="p">5 €</span></div></li></ul></div><div class="pan" role="tabpanel" id="pan-pates" aria-labelledby="tab-pates" hidden><ul class="dishes"><li class="dish"><img src="images/carte/pates-carbonara.webp" width="900" height="505" alt="Carbonara" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Carbonara</span><span class="p">15 €</span></div></li><li class="dish"><img src="images/carte/pates-bolognaise.webp" width="900" height="554" alt="Bolognaise" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Bolognaise</span><span class="p">15 €</span></div></li><li class="dish"><img src="images/carte/pates-trois-fromages.webp" width="900" height="522" alt="Trois fromages" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Trois fromages</span><span class="p">15 €</span></div></li><li class="dish"><img src="images/carte/pates-saumon.webp" width="900" height="555" alt="Pâtes saumon" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Pâtes saumon</span><span class="p">16 €</span></div></li><li class="dish"><img src="images/carte/pates-forestiere.webp" width="900" height="554" alt="Forestière" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Forestière</span><span class="p">15 €</span></div></li></ul></div><div class="pan" role="tabpanel" id="pan-brasserie" aria-labelledby="tab-brasserie" hidden><p class="pan-intro">Les assiettes de viande de la maison.</p><ul class="dishes"><li class="dish"><img src="images/le-saphir-assiette-brasserie-oeuf-frites.webp" width="878" height="878" alt="Steak à cheval" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Steak à cheval</span><span class="p">15 €</span></div></li></ul><ul class="dish-list"><li><span class="n">Filet de bœuf</span><span class="d" aria-hidden="true"></span><span class="p">25 €</span></li><li><span class="n">Entrecôte</span><span class="d" aria-hidden="true"></span><span class="p">25 €</span></li></ul></div><div class="pan" role="tabpanel" id="pan-salades" aria-labelledby="tab-salades" hidden><ul class="dish-list"><li><span class="n">Salade César</span><span class="d" aria-hidden="true"></span><span class="p">14 €</span></li></ul></div><div class="pan" role="tabpanel" id="pan-crepes" aria-labelledby="tab-crepes" hidden><ul class="dishes"><li class="dish"><img src="images/le-saphir-crepe-chocolat.webp" width="878" height="878" alt="Crêpe sucrée" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Crêpe sucrée</span><span class="p">6 €</span></div></li></ul><ul class="dish-list"><li><span class="n">Crêpe salée</span><span class="d" aria-hidden="true"></span><span class="p">8 €</span></li></ul></div><div class="pan" role="tabpanel" id="pan-desserts" aria-labelledby="tab-desserts" hidden><ul class="dish-list"><li><span class="n">Fondant au chocolat</span><span class="d" aria-hidden="true"></span><span class="p">8 €</span></li><li><span class="n">Crème brûlée</span><span class="d" aria-hidden="true"></span><span class="p">8 €</span></li><li><span class="n">Tiramisu</span><span class="d" aria-hidden="true"></span><span class="p">10 €</span></li><li><span class="n">Pain perdu</span><span class="d" aria-hidden="true"></span><span class="p">10 €</span></li><li><span class="n">Fraise melba</span><span class="d" aria-hidden="true"></span><span class="p">10 €</span></li><li><span class="n">Sorbet tropical</span><span class="d" aria-hidden="true"></span><span class="p">10 €</span></li><li><span class="n">Milkshake</span><span class="d" aria-hidden="true"></span><span class="p">6 €</span></li><li><span class="n">Smoothie</span><span class="d" aria-hidden="true"></span><span class="p">8 €</span></li></ul></div><div class="pan" role="tabpanel" id="pan-mocktails" aria-labelledby="tab-mocktails" hidden><p class="pan-intro">Des créations sans alcool.</p><ul class="dishes"><li class="dish"><img src="images/carte/mocktail-pornstar.webp" width="900" height="554" alt="Pornstar" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Pornstar</span><span class="p">10 €</span></div></li><li class="dish"><img src="images/carte/mocktail-limonade.webp" width="900" height="554" alt="Limonade maison" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Limonade maison</span><span class="p">10 €</span></div></li><li class="dish"><img src="images/carte/mocktail-pina-colada.webp" width="900" height="553" alt="Piña colada" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Piña colada</span><span class="p">10 €</span></div></li><li class="dish"><img src="images/carte/mocktail-the-glace.webp" width="900" height="554" alt="Thé glacé maison" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Thé glacé maison</span><span class="p">10 €</span></div></li><li class="dish"><img src="images/carte/mocktail-bora-bora.webp" width="900" height="554" alt="Bora Bora" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Bora Bora</span><span class="p">10 €</span></div></li><li class="dish"><img src="images/carte/mocktail-sex-on-the-beach.webp" width="900" height="554" alt="Sex on the beach" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Sex on the beach</span><span class="p">10 €</span></div></li><li class="dish"><img src="images/carte/mocktail-virgin-mojito.webp" width="900" height="554" alt="Virgin mojito" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Virgin mojito</span><span class="p">10 €</span></div></li></ul></div><div class="pan" role="tabpanel" id="pan-boissons" aria-labelledby="tab-boissons" hidden><ul class="dishes"><li class="dish"><img src="images/carte/boisson-cafe.webp" width="900" height="554" alt="Café" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Café</span><span class="p">3 €</span></div></li><li class="dish"><img src="images/carte/boisson-the.webp" width="900" height="554" alt="Thé" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Thé</span><span class="p">5 €</span></div></li><li class="dish"><img src="images/carte/boisson-soft.webp" width="900" height="443" alt="Soft" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Soft</span><span class="p">5 €</span></div></li><li class="dish"><img src="images/carte/boisson-sirop.webp" width="900" height="554" alt="Sirop" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Sirop</span><span class="p">5 €</span></div></li><li class="dish"><img src="images/carte/boisson-redbull.webp" width="900" height="482" alt="Red Bull" loading="lazy" decoding="async"><div class="dish-t"><span class="n">Red Bull</span><span class="p">8 €</span></div></li></ul></div>
+    <p class="menu-foot">La carte peut évoluer selon les disponibilités.</p>
   </div>
 </section>
 
@@ -499,9 +498,9 @@ footer a:hover{color:#fff}
     <div class="gallery">
       <img class="ph fade" style="--r:4/5" src="images/le-saphir-salle-ecran-matchs.webp" width="878" height="1098" alt="Salle du Saphir : banquettes en velours bleu, fauteuils dorés et grand écran" loading="lazy" decoding="async">
       <img class="ph fade" style="--r:4/5" src="images/le-saphir-salle-neon-violet.webp" width="878" height="585" alt="Salle violette avec fauteuils bordeaux, tables rondes et néon Le Saphir" loading="lazy" decoding="async">
-      <img class="ph fade" style="--r:4/5" src="images/le-saphir-assiette-brasserie-oeuf-frites.webp" width="878" height="878" alt="Assiette brasserie : œuf au plat, jambon, cheddar et frites" loading="lazy" decoding="async">
+      <img class="ph fade" style="--r:4/5" src="images/le-saphir-salle-principale-panorama.webp" width="1125" height="406" alt="Salle principale du Saphir : banquettes en velours bleu et fauteuils dorés" loading="lazy" decoding="async">
       <img class="ph fade" style="--r:4/5" src="images/le-saphir-brunch-week-end.webp" width="878" height="878" alt="Assiettes du brunch du week-end : pâtes, salades et crêpes" loading="lazy" decoding="async">
-      <img class="ph fade" style="--r:4/5" src="images/le-saphir-crepe-chocolat.webp" width="878" height="878" alt="Crêpe nappée de chocolat et sucre glace" loading="lazy" decoding="async">
+      <img class="ph fade" style="--r:4/5" src="images/le-saphir-paris-13-chicha-et-plats.webp" width="1000" height="667" alt="Chicha entourée de plats et de mocktails dans la salle bleue du Saphir" loading="lazy" decoding="async">
       <img class="ph fade" style="--r:4/5" src="images/le-saphir-paris-13-facade-restaurant-lounge.webp" width="1000" height="667" alt="Façade illuminée du Saphir au 49 rue de Patay" loading="lazy" decoding="async">
     </div>
   </div>
@@ -627,6 +626,11 @@ footer a:hover{color:#fff}
 
   document.getElementById('year').textContent=new Date().getFullYear();
 })();
+</script>
+<script>
+(function(){var t=[].slice.call(document.querySelectorAll('.tabs [role=tab]'));
+function sel(b,f){t.forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on});if(f)b.focus();b.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'})}
+t.forEach(function(b,i){b.addEventListener('click',function(){sel(b)});b.addEventListener('keydown',function(e){var j=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:-1;if(j<0&&e.key!=='ArrowLeft')return;e.preventDefault();sel(t[(j+t.length)%t.length],1)})})})();
 </script>
 </body>
 </html>
